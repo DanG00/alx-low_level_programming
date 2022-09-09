@@ -1,39 +1,46 @@
 #include <stdio.h>
-
 /**
  * main - Entry point
  *
- * Return: 0
+ * Return: Always 0 (Success/correct)
  */
-
 int main(void)
-{
-	int i;
-	int v;
-	int k;
 
-	for (i == '0'; i <= '9'; i++)
-	{
-	for (v == '0'; v <= '9'; v++)
-	{
-		if (v == i || v == '0')
-		{
-			continue;
-		}
-		putchar(i);
-		putchar(v);
-	}
-	for (k == '0'; k <= '9'; k++)
-	{
-		if (k == v || k == i || k == '0')
-		{
-			continue;
-		}
-		putchar(k);
-	}
-		putchar(',');
-		putchar(' ');
-	}
-	putchar('\n');
-	return (0);
+{
+int left;
+int right;
+int center;
+
+
+
+for (left = 48; left <= 57; left++)
+{
+for (center = left + 1; center <= 57; center++)
+{
+for (right = center + 1 ; right <= 57; right++)
+
+
+{
+putchar(left);
+putchar (center);
+putchar (right);
+
+if  ((left == 55) && (center == left + 1) && (right == center + 1))
+{
+break;
+}
+
+putchar(',');
+putchar (' ');
+
+}
+
+}
+
+}
+
+putchar('\n');
+
+return (0);
+
 }
