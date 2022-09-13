@@ -7,18 +7,17 @@
  */
 
 int main(void)
-  
 {
-  char puts[7] = "putchar"; 
-  int i;
-  int v = '_';
- 
-  putchar(v); 
+	char puts[7] = "putchar";
+	int i;
+	int v = '_';
 
-  for (i = 0; i < 7; i++)
-  {     
-      putchar(puts[i]);    
-  }  
-  putchar('\n'); 
-  return (0);  
+	putchar(v);
+
+	for (i = 0; i < 7; i++)
+	{
+		putchar(puts[i]);
+	}
+	putchar('\n');
+	return (0);
 }
