@@ -7,31 +7,22 @@
 
 int main(void)
 {
-	long int i, first = 1, second = 2, next;
+	long int i, first = 1, second = 2, next = 0, sum = 2;
 
-	printf("%ld", first);
-	printf(",");
-	printf(" ");
-	printf("%ld", second);
-	printf(",");
-	printf(" ");
-
-	for (i = 0; i < 48; i++)
+	for (i = 0; i < 40; i++)
 	{
-		next = second + first;
-		first = second;
-		second = next;
-		printf("%ld", next);
-		if (i == 47)
+		if (next <= 4000000)
 		{
-			break;
-		}
-		else
-		{
-			printf(",");
-			printf(" ");
+			next = second + first;
+			first = second;
+			second = next;
+			if (next % 2 == 0)
+			{
+				sum = sum + next;
+			}
 		}
 	}
+	printf("%ld", sum);
 	printf("\n");
 	return (0);
 }
